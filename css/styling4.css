@@ -1,0 +1,172 @@
+
+
+a {
+    color: #0d6efd;
+}
+
+
+.contact {
+    margin: auto;
+    height: 80vh;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center
+}
+
+.mapicon {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.icons {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.icon {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.icon i {
+    font-size: 50px;
+    color: #0d6efd;
+}
+
+.icon a {
+    color: #868686;
+    margin-top: 10px;
+}
+
+.containeri {
+    /*
+        width: 400px;
+        height: 300px;
+*/
+    background-color: #fff;
+    margin: 150px auto;
+    border-radius: 11px;
+    padding: 40px 50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* top-header */
+.top-header h3 {
+    text-align: center;
+    color: #495d76;
+}
+
+.top-header p {
+    color: #cecfd3;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* top-header */
+/* form */
+.user input,
+.pass input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 40px;
+}
+
+::placeholder {
+    color: #9ca5b4;
+    font-size: 12px;
+}
+
+
+#texting {
+    border: none;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 40px;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+
+.user i,
+.pass i {
+    position: relative;
+    top: 31px;
+    right: -10px;
+    color: #3981ed;
+}
+
+/* form */
+/* button */
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.btn button {
+    width: 100%;
+    border: 2px solid #277ffd;
+    background-color: #277ffd;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+}
+.btn button:hover {
+    background-color: #fff;
+    color: #277ffd;
+    transition: all 0.5s;
+}
+
+button:hover::before, button:hover::after{
+    width: 0
+}
+
+/* button */
+p.last {
+    text-align: center;
+    position: relative;
+    bottom: 120px;
+    font-size: 12px;
+}
+@media only screen and (max-width: 1300px){
+.contact {
+    margin: auto;
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+    .mapicon{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+

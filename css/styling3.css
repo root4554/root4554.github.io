@@ -1,0 +1,364 @@
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+	background-color: #2a2a72;
+background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+display: flex;  
+    flex-direction: column;
+    align-items: center;
+}
+.backprod{
+    height: 40vw;
+    width: 100%;
+    background-image: url(backproductos.PNG);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+.backprod h1{
+    position: absolute;
+    font-size: 4vw;
+    top: 20vw;
+    right: 30px;
+	font-weight: 300;
+	text-align: center;
+}
+.backprod h3{
+    position: absolute;
+    font-size: 2.5vw;
+    top: 25vw;
+    right:30px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+.backprod i{  
+    position: absolute;
+    font-size: 20vw;
+    top: 2vw;
+    right: 10vw;
+    font-weight: 100;
+    text-align: center;
+    -webkit-text-stroke: 1vw #75C4E5;
+}
+.volverarriba i{
+    color: white;
+}.volverarriba i:hover{
+    color: #0a58ca;
+    transition: all 0.5s;
+}
+
+#logosector{
+	height: 120px;
+	width: 150px;
+}
+.partearriba h1{
+	font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+}
+.partearriba h3{
+		font-size: 25px;
+		font-weight: 500;
+}
+
+a:hover{
+    color: #0a58ca;
+}
+button{
+     cursor: pointer;
+}
+
+.whatsapp h5{
+font-size: 1.25rem;
+font-weight: 500;
+}
+/*****************************products***************************/
+.productos {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100vh;
+    width: 80%;
+}
+
+.price {
+	position: absolute;
+    top: 1em;
+    right: 1em;
+    backdrop-filter: blur(19px);
+    background-color: rgba(0, 0, 0, 0.112);
+    box-shadow: rgb(0 0 0 / 30%) 2px 8px 8px;
+    border: 0px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 0px rgba(40, 40, 40, 0.35) solid;
+    border-right: 0px rgba(40, 40, 40, 0.35) solid;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    border-radius: 4px;
+    z-index: 201;
+}
+
+.container {
+	position: relative;
+	padding: 0 20px;
+}
+.container .cart {
+	position: relative;
+	width: 360px;
+    height: 495px;
+    margin: 50px;
+	border-radius: 20px;
+    background-color: #36096d;
+background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+	box-shadow: -20px -20px 25px #0e0e0e, 20px 20px 25px #dddddd5e;
+	overflow: hidden;
+}
+.container .cart:before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #9bdc28;
+	clip-path: circle(150px at 80% 20%);
+	transition: 0.5s ease-in-out;
+}
+.container .asics:before {
+	background: #ebff6a;
+}
+.container .adidas:before {
+	background: #87ff89;
+}
+.container .new-balance:before {
+	background: #00fbff;
+}
+.container .cart:hover:before {
+	clip-path: circle(300px at 80% -20%);
+}
+.container .cart:after {
+	content: "";
+	position: absolute;
+	top: 30%;
+	left: -20%;
+	font-size: 12em;
+	font-weight: 800;
+	font-style: italic;
+	color: rgba(255, 255, 255, 0.04);
+}
+.container .asics:after {
+	content: "Asics";
+}
+.container .adidas:after {
+	content: "Adidas";
+}
+.container .new-balance:after {
+	content: "new-balance";
+}
+.container .cart .imgBx {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 200;
+	width: 100%;
+	height: 220px;
+	transition: 0.5s ease-in-out;
+}
+.container .cart:hover .imgBx {
+	top: 0%;
+	transform: translateY(0%);
+}
+.container .cart .imgBx img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(0deg);
+	width: 270px;
+}
+.container .cart .contentBx {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	transition: 1s;
+	z-index: 300;
+}
+.container .cart:hover .contentBx {
+	height: 210px;
+}
+.container .cart .contentBx h2 {
+	position: relative;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #d2edff;
+}
+/* Shoe Size */
+.container .cart .contentBx .size,
+.container .cart .contentBx .color {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 20px;
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+}
+.container .cart:hover .contentBx .size {
+	opacity: 1;
+	visibility: visible;
+	translate-delay: 0.5s;
+}
+.container .cart:hover .contentBx .color {
+	opacity: 1;
+	visibility: visible;
+	translate-delay: 0.6s;
+}
+.container .cart .contentBx .size h3,
+.container .cart .contentBx .color h3 {
+	color: #fff;
+	font-weight: 300;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-right: 10px;
+}
+.container .cart .contentBx .size span {
+	width: 26px;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	font-size: 14px;
+	display: inline-block;
+	color: #111;
+	background: #fff;
+	margin: 0 5px;
+	transition: 0.5s;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.container .asics .contentBx .size span:hover {
+	background: #155eb4;
+}
+.container .adidas .contentBx .size span:hover {
+	background: #99243a;
+}
+.container .new-balance .contentBx .size span:hover {
+	background: #8a8576;
+}
+
+/* Shoe color */
+.container .cart .contentBx .color span {
+	width: 20px;
+	height: 20px;
+	background: #ff0;
+	border-radius: 50%;
+	margin: 0 5px;
+	cursor: pointer;
+}
+.container .cart .contentBx .color span:nth-child(2) {
+	background: #155eb4;
+}
+.container .cart .contentBx .color span:nth-child(3) {
+	background: red;
+}
+.container .cart .contentBx .color span:nth-child(4) {
+	background: black;
+}
+
+/* Button/ */
+.container .cart .contentBx button {
+	display: inline-block;
+	padding: 10px 20px;
+	background: #fff;
+	border-radius: 4px;
+	margin-top: 10px;
+	text-decoration: none;
+	font-weight: 600;
+	color: #111;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: 0.5s;
+	border: none;
+}
+.container .cart:hover .contentBx button {
+	opacity: 1;
+	transform: translateY(0px) ;
+    transition: all 0.85s;
+	cursor: pointer;
+    color: white;
+    background-color: #0000ff66;
+}
+button:hover::before, button:hover::after {
+    width: 0%;
+}
+ button:hover{
+    color: #0000ff66;
+    background-color: white;
+    transition: all 0.5s
+}
+
+.info {
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	color: #fff;
+	cursor: pointer;
+	z-index: 399;
+}
+
+.text {
+	display: none;
+	color: #fff;
+	padding: 2em;
+	z-index: 398;
+	position: relative;
+	backdrop-filter: blur(10px);
+	background-color: rgba(0, 0, 0, 0.2);
+	height: 100%;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.info:hover + .text {
+	display: block;
+}
+
+
+/****************mediaquery*************/
+@media only screen and (max-width: 1600px){
+    .container .cart {
+	width: 20vw;
+}
+    .container {
+	padding: 0 0px;
+}
+}
+
+@media only screen and (max-width: 1300px){
+       .container .cart {
+	width: 360px;
+}
+       .container {
+	    justify-content: center;
+}
+    .productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 80%;
+}
+}
+@media only screen and (max-width: 700px){
+/*
+    .whatsapp {
+    left: -150px;
+}
+*/
+}
